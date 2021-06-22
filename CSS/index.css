@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top: 0%;
+    left: 0%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loader >.div{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+}
+.loader.hidden{
+    animation-name:fadeup;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+@keyframes fadeup {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+}
