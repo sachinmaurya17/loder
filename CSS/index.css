@@ -3,6 +3,7 @@ body{
     padding: 0px;
     box-sizing:border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    
 }
 
 .loader{
@@ -17,20 +18,22 @@ body{
     align-items: center;
 
 }
-.loader >.div{
-    height: 100px;
+.loader >img{  
     width: 100px;
-    background-color: purple;
+    height: 100px;
+    
 }
 .loader.hidden{
     animation-name:fadeup;
-    animation-duration: 6s;
+    animation-duration: 2.1s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(1,-0.85,.09,1.49);
+    
+    
 }
 img{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 @keyframes fadeup {
     100%{
